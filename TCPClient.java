@@ -26,6 +26,7 @@ public class TCPClient {
 				sock.close();
 				break;
 			}
+			
 			writer.writeBytes(nick+" : "+send+'\n');
 			if(send.equals("bye")) {
 				System.out.println(reader.readLine());
